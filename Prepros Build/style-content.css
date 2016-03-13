@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.home-wrap {
+  display: flex;
+  background-color: pink;
+}
+
+.content {
+  height: 1500px;
+}

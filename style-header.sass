@@ -1,0 +1,75 @@
+header
+  width: 135px
+  background: white
+  padding: 30px 0
+
+  .header-position
+    position: fixed
+    top:30px
+    left: 0
+    bottom: 30px
+    width: 135px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: white
+
+
+  .logo
+    background:
+      image: url(img/ap-logo-3.jpg)
+      repeat: no-repeat
+      position: center
+      size: 200px
+    height: 80px
+    padding: 0
+    margin: 0
+
+  .site-nav
+    ul
+      font-family: 'Roboto', sans-serif
+      font-weight: 500
+      list-style: none
+      color: black
+      margin: 20px 0
+      padding: 0 20px 0 0
+      text-align: right
+
+      li
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
+
+      li a
+        text-decoration: none
+        color: black
+
+  .email-link
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    text-decoration: none
+    color: black
+    display: block
+    text-align: right
+    padding-right: 20px
+
+
+
+@media (max-width: 775px)
+  .home-wrap header
+    width: auto
+    padding: 20px 0
+
+    .header-position
+      position: relative
+      top: auto
+      bottom: auto
+      left: auto
+      flex-direction: row
+      align-items: center
+
+    .site-nav, .email-link
+      display: none
+
+    .logo
+      height: 100px
