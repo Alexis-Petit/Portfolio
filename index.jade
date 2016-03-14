@@ -15,18 +15,21 @@ html
           
           nav.site-nav 
             ul
-              li: a(href="about") Accueil 
-              li: a(href="about") Compétences
-              li: a(href="about") Portfolio
-              li: a(href="about") Contact
+              li: a(href="about") ACCUEIL 
+              li: a(href="about") COMPETENCES
+              li: a(href="about") PORTFOLIO
+              li: a(href="about") CONTACT
               
           div.social-link
-            a(href="#")
-              img(src="img/png2/gitHub.png" height="32px")
-            a(href="#")
-              img(src="img/png2/viadeo.png" height="32px")
-            a(href="#")
-              img(src="img/png2/twitter.png" height="32px")
+            div.logo-box
+              a(href="#")
+                img(src="img/png2/gitHubW.png" height="45px" onmouseover="this.src='img/png2/gitHub.png'" onmouseout="this.src='img/png2/gitHubW.png'")
+            div.logo-box
+              a(href="#")
+                img(src="img/png2/viadeoW.png" height="45px" onmouseover="this.src='img/png2/viadeo.png'" onmouseout="this.src='img/png2/viadeoW.png'")
+            div.logo-box
+              a(href="#")
+                img(src="img/png2/twitterW.png" height="45px" onmouseover="this.src='img/png2/twitter.png'" onmouseout="this.src='img/png2/twitterW.png'")
 
           a(href="mailto:alexis-petit@live.fr").email-link +email me
       

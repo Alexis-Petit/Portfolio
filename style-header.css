@@ -39,6 +39,7 @@ header .site-nav ul {
 
 header .site-nav ul li {
   margin-bottom: 25px;
+  padding: 7px 5px;
 }
 
 header .site-nav ul li:last-child {
@@ -46,7 +47,7 @@ header .site-nav ul li:last-child {
 }
 
 header .site-nav ul li:hover {
-  border-bottom: white 5px inset;
+  background-color: #E74C3C;
 }
 
 header .site-nav ul li a {
@@ -62,6 +63,10 @@ header .social-link {
 }
 
 header #gitHub {
+  background-image: url(img/png/gitHub.png);
+}
+
+header #github:hover {
   background-image: url(img/png/gitHub.png);
 }
 
