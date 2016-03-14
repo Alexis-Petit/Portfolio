@@ -1,27 +1,28 @@
 header
-  width: 135px
-  background: white
+  width: 250px
+  background: #2C3E50
   padding: 30px 0
 
   .header-position
+    padding: 30px 0
     position: fixed
-    top:30px
+    top:0
     left: 0
-    bottom: 30px
-    width: 135px
+    bottom: 0
+    width: 250px
     display: flex
     flex-direction: column
     justify-content: space-between
-    background-color: white
+    background-color: #2C3E50
 
 
   .logo
     background:
-      image: url(img/ap-logo-3.jpg)
+      image: url(img/logo.png)
       repeat: no-repeat
       position: center
-      size: 200px
-    height: 80px
+      size: contain
+    height: 100px
     padding: 0
     margin: 0
 
@@ -30,28 +31,49 @@ header
       font-family: 'Roboto', sans-serif
       font-weight: 500
       list-style: none
-      color: black
+      color: white
       margin: 20px 0
-      padding: 0 20px 0 0
-      text-align: right
+      padding: 0
+      text-align: center
 
       li
-        margin-bottom: 10px
+        margin-bottom: 25px
         &:last-child
           margin-bottom: 0
 
+      li:hover
+        border-bottom: white 5px inset
+
       li a
         text-decoration: none
-        color: black
+        color: white
+
+
+  .social-link
+    display: inline-flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+
+  #gitHub
+    background-image: url(img/png/gitHub.png)
+
+  #twitter
+    background-image: url(img/png/twitter.png)
+
+  #viadeo
+    background-image: url(img/png/Viadeo.png)
+
+
 
   .email-link
     font-family: 'Roboto', sans-serif
     font-weight: 400
     text-decoration: none
-    color: black
+    color: white
     display: block
-    text-align: right
-    padding-right: 20px
+    text-align: center
+    padding-right: 0
 
 
 

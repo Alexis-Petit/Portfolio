@@ -1,27 +1,28 @@
 header {
-  width: 135px;
-  background: white;
+  width: 250px;
+  background: #2C3E50;
   padding: 30px 0;
 }
 
 header .header-position {
+  padding: 30px 0;
   position: fixed;
-  top: 30px;
+  top: 0;
   left: 0;
-  bottom: 30px;
-  width: 135px;
+  bottom: 0;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: #2C3E50;
 }
 
 header .logo {
-  background-image: url(img/ap-logo-3.jpg);
+  background-image: url(img/logo.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px;
-  height: 80px;
+  background-size: contain;
+  height: 100px;
   padding: 0;
   margin: 0;
 }
@@ -30,33 +31,56 @@ header .site-nav ul {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   list-style: none;
-  color: black;
+  color: white;
   margin: 20px 0;
-  padding: 0 20px 0 0;
-  text-align: right;
+  padding: 0;
+  text-align: center;
 }
 
 header .site-nav ul li {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 header .site-nav ul li:last-child {
   margin-bottom: 0;
 }
 
+header .site-nav ul li:hover {
+  border-bottom: white 5px inset;
+}
+
 header .site-nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+header .social-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header #gitHub {
+  background-image: url(img/png/gitHub.png);
+}
+
+header #twitter {
+  background-image: url(img/png/twitter.png);
+}
+
+header #viadeo {
+  background-image: url(img/png/Viadeo.png);
 }
 
 header .email-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
-  text-align: right;
-  padding-right: 20px;
+  text-align: center;
+  padding-right: 0;
 }
 
 @media (max-width: 775px) {
