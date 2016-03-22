@@ -4,37 +4,82 @@ html
     title Alexis Petit
     meta(charset="utf-8")
     link(rel="stylesheet", href="style-header.css")
-    link(rel="stylesheet", href="style-content.css")
-    //link (href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,400italic' rel='stylesheet' type='text/css')
-    
+    //link(rel="stylesheet", href="style-content.css")
+    link(rel="stylesheet", href="style-content-temp.css")
+    link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,400italic", rel="stylesheet", type="text/css")
+    link(rel="shortcut icon" type="image/x-icon" src="img/logoB.png")
   body
+  
     div.home-wrap
       header
         .header-position
-          h1.logo
+          a(href="#")
+            img.logo(src="img/logoB.png")
           
-          nav.site-nav 
-            ul
-              li: a(href="about") ACCUEIL 
-              li: a(href="about") COMPETENCES
-              li: a(href="about") PORTFOLIO
-              li: a(href="about") CONTACT
+          nav.site-nav           
+            a(href="about") Accueil 
+            a(href="about") A propos
+            a(href="about") Portfolio
+            a(href="about") Contact
               
-          div.social-link
+          //div.social-link
             div.logo-box
-              a(href="#")
-                img(src="img/png2/gitHubW.png" height="45px" onmouseover="this.src='img/png2/gitHub.png'" onmouseout="this.src='img/png2/gitHubW.png'")
+              a(class="logo" href="#")
+                img(src="img/png2/gitHubW.png" height="45px")
             div.logo-box
-              a(href="#")
-                img(src="img/png2/viadeoW.png" height="45px" onmouseover="this.src='img/png2/viadeo.png'" onmouseout="this.src='img/png2/viadeoW.png'")
+              a(class ="logo" href="#")
+                img(src="img/png2/viadeoW.png" height="45px")
             div.logo-box
-              a(href="#")
-                img(src="img/png2/twitterW.png" height="45px" onmouseover="this.src='img/png2/twitter.png'" onmouseout="this.src='img/png2/twitterW.png'")
+              a(class="logo" href="#")
+                img(src="img/png2/twitterW.png" height="45px")
 
-          a(href="mailto:alexis-petit@live.fr").email-link +email me
+          a(href="mailto:alexis-petit@live.fr").email-link +email
       
       section.content
-        article.presentation
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        section#content-header.content-bloc
+          div.opacity
+            div.opacity-txt
+              div#content-header-txt
+                h1 ALEXIS PETIT
+                h2 Lorem Ipsum / Dolor Si Amet
+        
+        section#content-aPropos.content-bloc
+            
+            
+        section#content-portfolio.content-bloc
+
+
+        section#content-contact.content-bloc
+          h1#contact-title Contactez moi !
+          div#flex-contact
+            div#left-contact
+              div#nomPrenom
+                h3 ALEXIS PETIT
+                h4 Lorem Ipsum
+                
+              div#localisation
+                h3 LANNION
+                h4 22300
+                
+              div#email-contact
+                h3 ADRESSE E-MAIL
+                a(href="mailto:alexis-petit@live.fr") alexis-petit@live.fr
+            
+            div#right-contact
+              div#twitter
+                h3 twitter
+                h4 @alexsPetit
+
+              div#gitHub
+                h3 GitHub
+                h4 alexis-petit
+                
+              div#viadeoW
+                h3 viadeoW
+                h4 namnamnam
+              
+              
+        
+        footer#main-footer
             
   

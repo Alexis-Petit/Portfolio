@@ -4,33 +4,76 @@
     <title>Alexis Petit</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style-header.css">
-    <link rel="stylesheet" href="style-content.css">
-    <!--link (href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,400italic' rel='stylesheet' type='text/css')-->
+    <!--link(rel="stylesheet", href="style-content.css")-->
+    <link rel="stylesheet" href="style-content-temp.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,400italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" src="img/logoB.png">
   </head>
   <body>
     <div class="home-wrap">
       <header>
-        <div class="header-position">
-          <h1 class="logo"></h1>
-          <nav class="site-nav"> 
-            <ul>
-              <li><a href="about">ACCUEIL </a></li>
-              <li><a href="about">COMPETENCES</a></li>
-              <li><a href="about">PORTFOLIO</a></li>
-              <li><a href="about">CONTACT</a></li>
-            </ul>
-          </nav>
-          <div class="social-link">
-            <div class="logo-box"><a href="#"><img src="img/png2/gitHubW.png" height="45px" onmouseover="this.src='img/png2/gitHub.png'" onmouseout="this.src='img/png2/gitHubW.png'"></a></div>
-            <div class="logo-box"><a href="#"><img src="img/png2/viadeoW.png" height="45px" onmouseover="this.src='img/png2/viadeo.png'" onmouseout="this.src='img/png2/viadeoW.png'"></a></div>
-            <div class="logo-box"><a href="#"><img src="img/png2/twitterW.png" height="45px" onmouseover="this.src='img/png2/twitter.png'" onmouseout="this.src='img/png2/twitterW.png'"></a></div>
-          </div><a href="mailto:alexis-petit@live.fr" class="email-link">+email me</a>
+        <div class="header-position"><a href="#"><img src="img/logoB.png" class="logo"></a>
+          <nav class="site-nav">          <a href="about">Accueil </a><a href="about">A propos</a><a href="about">Portfolio</a><a href="about">Contact</a></nav>
+          <!--div.social-link
+          div.logo-box
+            a(class="logo" href="#")
+              img(src="img/png2/gitHubW.png" height="45px")
+          div.logo-box
+            a(class ="logo" href="#")
+              img(src="img/png2/viadeoW.png" height="45px")
+          div.logo-box
+            a(class="logo" href="#")
+              img(src="img/png2/twitterW.png" height="45px")
+          
+          --><a href="mailto:alexis-petit@live.fr" class="email-link">+email</a>
         </div>
       </header>
       <section class="content">
-        <article class="presentation">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
+        <section id="content-header" class="content-bloc">
+          <div class="opacity">
+            <div class="opacity-txt">
+              <div id="content-header-txt">
+                <h1>ALEXIS PETIT</h1>
+                <h2>Lorem Ipsum / Dolor Si Amet</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="content-aPropos" class="content-bloc"></section>
+        <section id="content-portfolio" class="content-bloc"></section>
+        <section id="content-contact" class="content-bloc">
+          <h1 id="contact-title">Contactez moi !</h1>
+          <div id="flex-contact">
+            <div id="left-contact">
+              <div id="nomPrenom">
+                <h3>ALEXIS PETIT</h3>
+                <h4>Lorem Ipsum</h4>
+              </div>
+              <div id="localisation">
+                <h3>LANNION</h3>
+                <h4>22300</h4>
+              </div>
+              <div id="email-contact">
+                <h3>ADRESSE E-MAIL</h3><a href="mailto:alexis-petit@live.fr">alexis-petit@live.fr</a>
+              </div>
+            </div>
+            <div id="right-contact">
+              <div id="twitter">
+                <h3>twitter</h3>
+                <h4>@alexsPetit</h4>
+              </div>
+              <div id="gitHub">
+                <h3>GitHub</h3>
+                <h4>alexis-petit</h4>
+              </div>
+              <div id="viadeoW">
+                <h3>viadeoW</h3>
+                <h4>namnamnam</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer id="main-footer"></footer>
       </section>
     </div>
   </body>

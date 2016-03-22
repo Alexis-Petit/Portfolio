@@ -1,6 +1,12 @@
+$menu-bg-c: #FFF
+$menu-txt: #363737
+$menu-red: #FE1D39
+$menu-hover: #E5E5E5
+$a-hover: #E0E0E0
+
 header
-  width: 250px
-  background: #2C3E50
+  width: 15vw
+  background: $menu-bg-c
   padding: 30px 0
 
   .header-position
@@ -9,76 +15,97 @@ header
     top:0
     left: 0
     bottom: 0
-    width: 250px
+    width: inherit
     display: flex
     flex-direction: column
     justify-content: space-between
-    background-color: #2C3E50
+    background-color: $menu-bg-c
 
 
   .logo
-    background:
-      image: url(img/logo.png)
-      repeat: no-repeat
-      position: center
-      size: contain
-    height: 100px
-    padding: 0
-    margin: 0
+    width: 100%
+    margin-left: auto
+    margin-right: 100px
+    img
+      filter: blur(20px)
 
   .site-nav
-    ul
-      font-family: 'Roboto', sans-serif
-      font-weight: 500
-      list-style: none
-      color: white
-      margin: 20px 0
-      padding: 0
-      text-align: center
+    font-weight: 500
+    margin: 20px 0
+    padding: 0
+    text-align: right
 
-      li
-        margin-bottom: 25px
-        padding: 7px 5px
-        &:last-child
-          margin-bottom: 0
+    a
 
-      li:hover
-        background-color: #E74C3C
-        //border-bottom: #E74C3C 5px inset
+      display : block
+      font-size: 1.5em
+      color: $menu-txt
+      text-decoration: none
+      width: auto
+      margin-bottom: 20px
+      margin-right: 30px
+      margin-left: 5px
+      padding: 10px 10px
+      border-right: solid $a-hover 3px
+      border-radius: 0px
+      transition: all 150ms ease-in
 
-      li a
+      &:last-child
+        margin-bottom: 0
+
+
+    a:hover
+      background-color: $menu-hover
+      font-size: 1.53em
+      border-radius: 3px
+      -moz-box-shadow: 5px 5px 10px 0px #cfcfcf
+      -webkit-box-shadow: 5px 5px 10px 0px #cfcfcf
+      -o-box-shadow: 5px 5px 10px 0px #cfcfcf
+      box-shadow: 5px 5px 10px 0px #cfcfcf
+      //border-top: solid $menu-txt 2px
+      //border-left: solid $a-hover 10px
+
+
+
+      a,a:link
         text-decoration: none
-        color: white
+        padding: 7px 5px
+        color: $menu-txt
+
+      a:hover
+        color: $menu-bg-c
 
 
-  .social-link
+
+  //.social-link
     display: inline-flex
     flex-direction: row
     align-items: center
     justify-content: space-around
 
-  #gitHub
-    background-image: url(img/png/gitHub.png)
-
-  #github:hover
-    background-image: url(img/png/gitHub.png)
-
-  #twitter
-    background-image: url(img/png/twitter.png)
-
-  #viadeo
-    background-image: url(img/png/Viadeo.png)
-
-
-
   .email-link
-    font-family: 'Roboto', sans-serif
-    font-weight: 400
+    font-size: 1.5em
+    font-weight: 500
     text-decoration: none
-    color: white
+    color: $menu-txt
     display: block
-    text-align: center
-    padding-right: 0
+    text-align: right
+    width: auto
+    margin-bottom: 20px
+    margin-left: 20px
+    margin-right: 30px
+    padding: 10px 10px
+    transition: all 200ms ease
+
+  .email-link:hover
+    background-color: $menu-hover
+    font-size: 1.53em
+    //border-right: solid $menu-txt 5vw
+    border-radius: 3px
+    -moz-box-shadow: 5px 5px 10px 0px #cfcfcf
+    -webkit-box-shadow: 5px 5px 10px 0px #cfcfcf
+    -o-box-shadow: 5px 5px 10px 0px #cfcfcf
+    box-shadow: 5px 5px 10px 0px #cfcfcf
 
 
 

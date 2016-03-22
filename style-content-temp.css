@@ -1,0 +1,123 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+
+.home-wrap {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  //flex-basis: 100vh;
+  width: 84vw;
+  clear: both;
+  //height: 1500px;
+  overflow: hidden;
+}
+
+.content-bloc {
+  height: 100vh;
+
+}
+
+#content-header {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(img/bg-content-header5.jpg);
+  background-size: cover;
+}
+
+.opacity{
+
+  padding: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.65);
+}
+
+.opacity-txt {
+  background-color: rgba(196, 23, 51, 0.5);
+
+}
+
+#content-header-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  color: white;
+  opacity: none;
+  text-align: center;
+
+}
+
+#content-header-txt h1 {
+
+  font-size: 3em;
+  font-weight: 500;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: solid #FFF 5px;
+  border-radius: 0px;
+  transition: all 300ms ease-in
+
+
+}
+
+#content-header-txt h1:hover {
+  font-size: 3.5em;
+  padding: 20px;
+  border: solid #FFF 5px;
+  border-radius: 15px;
+}
+
+#content-header-txt h2 {
+  margin-top: 0;
+  font-size: 2.2em;
+  font-weight: 500;
+  //border-bottom: solid #FFF 2px;
+
+}
+
+#content-aPropos {
+  background-color: black;
+}
+
+
+#content-portfolio {
+  background-color: red;
+}
+
+#content-contact {
+  background-color: #E0D6D5;
+
+}
+
+#flex-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+#contact-title {
+  color: #363737;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+#main-footer {
+  height: 30vh;
+  background-color: yellow;
+}
