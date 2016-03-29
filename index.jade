@@ -7,7 +7,10 @@ html
     //link(rel="stylesheet", href="style-content.css")
     link(rel="stylesheet", href="style-content-temp.css")
     link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,400italic", rel="stylesheet", type="text/css")
+    link(rel="stylesheet", href="font/fontello-contact/css/icon-contact.css")
     link(rel="shortcut icon" type="image/x-icon" src="img/logoB.png")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+
   body
   
     div.home-wrap
@@ -17,10 +20,10 @@ html
             img.logo(src="img/logoB.png")
           
           nav.site-nav           
-            a(href="about") Accueil 
-            a(href="about") A propos
-            a(href="about") Portfolio
-            a(href="about") Contact
+            a.js-scrollTo(href="#content-header") Accueil 
+            a.js-scrollTo(href="#content-aPropos") A propos
+            a.js-scrollTo(href="#content-portfolio") Portfolio
+            a.js-scrollTo(href="#content-contact") Contact
               
           //div.social-link
             div.logo-box
@@ -44,42 +47,64 @@ html
                 h2 Lorem Ipsum / Dolor Si Amet
         
         section#content-aPropos.content-bloc
+          h1 en developpement
             
             
         section#content-portfolio.content-bloc
-
+          h1 en developpement
 
         section#content-contact.content-bloc
           h1#contact-title Contactez moi !
-          div#flex-contact
+          div.flex-contact
+            div#cvDl
+              a(href="img/cvAlexis.jpg" download)
+                figure.fig
+                  img#cv(src="img/cvAlexisLowQ.jpg")
+                  figcaption curriculum vitae
+                  
             div#left-contact
-              div#nomPrenom
-                h3 ALEXIS PETIT
-                h4 Lorem Ipsum
+              div#nomPrenom.contact-box
+                h3
+                  i.icon-user  
+                  |ALEXIS PETIT
+                  h4 Lorem Ipsum
                 
-              div#localisation
-                h3 LANNION
+              div#localisation.contact-box
+                h3 
+                  i.icon-location
+                  |LANNION
                 h4 22300
                 
-              div#email-contact
-                h3 ADRESSE E-MAIL
+              div#email-contact.contact-box
+                h3
+                  i.icon-mail-alt
+                  | E-MAIL
                 a(href="mailto:alexis-petit@live.fr") alexis-petit@live.fr
             
             div#right-contact
-              div#twitter
-                h3 twitter
+              div#twitter.contact-box 
+                i.icon-twitter
+                |TWITTER
                 h4 @alexsPetit
 
-              div#gitHub
-                h3 GitHub
-                h4 alexis-petit
+              div#gitHub.contact-box
+                h3
+                  i.icon-github-circled
+                  |GITHUB
+                h4  alexis-petit
                 
-              div#viadeoW
-                h3 viadeoW
+              div#viadeo.contact-box
+                h3
+                  i.icon-viadeo
+                  |VIADEO
                 h4 namnamnam
               
-              
-        
         footer#main-footer
+          p en developpement
+          
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+      script(src="script.js")
+
+      
             
   

@@ -7,13 +7,15 @@
     <!--link(rel="stylesheet", href="style-content.css")-->
     <link rel="stylesheet" href="style-content-temp.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font/fontello-contact/css/icon-contact.css">
     <link rel="shortcut icon" type="image/x-icon" src="img/logoB.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
   <body>
     <div class="home-wrap">
       <header>
         <div class="header-position"><a href="#"><img src="img/logoB.png" class="logo"></a>
-          <nav class="site-nav">          <a href="about">Accueil </a><a href="about">A propos</a><a href="about">Portfolio</a><a href="about">Contact</a></nav>
+          <nav class="site-nav">          <a href="#content-header" class="js-scrollTo">Accueil </a><a href="#content-aPropos" class="js-scrollTo">A propos</a><a href="#content-portfolio" class="js-scrollTo">Portfolio</a><a href="#content-contact" class="js-scrollTo">Contact</a></nav>
           <!--div.social-link
           div.logo-box
             a(class="logo" href="#")
@@ -39,42 +41,54 @@
             </div>
           </div>
         </section>
-        <section id="content-aPropos" class="content-bloc"></section>
-        <section id="content-portfolio" class="content-bloc"></section>
+        <section id="content-aPropos" class="content-bloc">
+          <h1>en developpement</h1>
+        </section>
+        <section id="content-portfolio" class="content-bloc">
+          <h1>en developpement</h1>
+        </section>
         <section id="content-contact" class="content-bloc">
           <h1 id="contact-title">Contactez moi !</h1>
-          <div id="flex-contact">
+          <div class="flex-contact">
+            <div id="cvDl"><a href="img/cvAlexis.jpg" download>
+                <figure class="fig"><img id="cv" src="img/cvAlexisLowQ.jpg">
+                  <figcaption>curriculum vitae</figcaption>
+                </figure></a></div>
             <div id="left-contact">
-              <div id="nomPrenom">
-                <h3>ALEXIS PETIT</h3>
-                <h4>Lorem Ipsum</h4>
+              <div id="nomPrenom" class="contact-box">
+                <h3><i class="icon-user"> </i>ALEXIS PETIT
+                  <h4>Lorem Ipsum</h4>
+                </h3>
               </div>
-              <div id="localisation">
-                <h3>LANNION</h3>
+              <div id="localisation" class="contact-box">
+                <h3> <i class="icon-location"></i>LANNION</h3>
                 <h4>22300</h4>
               </div>
-              <div id="email-contact">
-                <h3>ADRESSE E-MAIL</h3><a href="mailto:alexis-petit@live.fr">alexis-petit@live.fr</a>
+              <div id="email-contact" class="contact-box">
+                <h3><i class="icon-mail-alt"></i>E-MAIL</h3><a href="mailto:alexis-petit@live.fr">alexis-petit@live.fr</a>
               </div>
             </div>
             <div id="right-contact">
-              <div id="twitter">
-                <h3>twitter</h3>
+              <div id="twitter" class="contact-box"> <i class="icon-twitter"></i>TWITTER
                 <h4>@alexsPetit</h4>
               </div>
-              <div id="gitHub">
-                <h3>GitHub</h3>
-                <h4>alexis-petit</h4>
+              <div id="gitHub" class="contact-box">
+                <h3><i class="icon-github-circled"></i>GITHUB</h3>
+                <h4> alexis-petit</h4>
               </div>
-              <div id="viadeoW">
-                <h3>viadeoW</h3>
+              <div id="viadeo" class="contact-box">
+                <h3><i class="icon-viadeo"></i>VIADEO</h3>
                 <h4>namnamnam</h4>
               </div>
             </div>
           </div>
         </section>
-        <footer id="main-footer"></footer>
+        <footer id="main-footer">
+          <p>en developpement</p>
+        </footer>
       </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

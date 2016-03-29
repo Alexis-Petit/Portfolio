@@ -56,15 +56,32 @@ header
 
     a:hover
       background-color: $menu-hover
-      font-size: 1.53em
+      //font-size: 1.53em
+      transform: scale(1.07)
+      -ms-transform: scale(1.07)
+      -webkit-transform: scale(1.07)
+      -o-transform: scale(1.07)
+      -moz-transform: scale(1.07)
       border-radius: 3px
-      -moz-box-shadow: 5px 5px 10px 0px #cfcfcf
-      -webkit-box-shadow: 5px 5px 10px 0px #cfcfcf
-      -o-box-shadow: 5px 5px 10px 0px #cfcfcf
-      box-shadow: 5px 5px 10px 0px #cfcfcf
+      -moz-box-shadow: 0px 0px 5px 2px #cfcfcf
+      -webkit-box-shadow: 0px 0px 5px 2px #cfcfcf
+      // -o-box-shadow: 0px 0px 5px 2px #cfcfcf
+      box-shadow: 0px 0px 5px 2px #cfcfcf
+      //-moz-box-shadow: 5px 5px 10px 0px #cfcfcf
+      //-webkit-box-shadow: 5px 5px 10px 0px #cfcfcf
+      //-o-box-shadow: 5px 5px 10px 0px #cfcfcf
+    //  box-shadow: 5px 5px 10px 0px #cfcfcf
       //border-top: solid $menu-txt 2px
       //border-left: solid $a-hover 10px
 
+
+
+        //transform: scale(1.07)
+        //-ms-transform: scale(1.07)
+        //-webkit-transform: scale(1.07)
+        //-o-transform: scale(1.07)
+        //-moz-transform: scale(1.07)
+        //border: solid  3px rgba(65, 65, 62, 0)
 
 
       a,a:link
@@ -107,9 +124,12 @@ header
     -o-box-shadow: 5px 5px 10px 0px #cfcfcf
     box-shadow: 5px 5px 10px 0px #cfcfcf
 
+//@media all (max-width: 800px)
+  header
+    display: none
 
 
-@media (max-width: 775px)
+ (max-width: 775px)
   .home-wrap header
     width: auto
     padding: 20px 0

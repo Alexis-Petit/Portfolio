@@ -55,22 +55,15 @@ header .site-nav a:last-child {
 
 header .site-nav a:hover {
   background-color: #E5E5E5;
-  font-size: 1.53em;
+  transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  -moz-transform: scale(1.07);
   border-radius: 3px;
-  -moz-box-shadow: 5px 5px 10px 0px #cfcfcf;
-  -webkit-box-shadow: 5px 5px 10px 0px #cfcfcf;
-  -o-box-shadow: 5px 5px 10px 0px #cfcfcf;
-  box-shadow: 5px 5px 10px 0px #cfcfcf;
-}
-
-header .site-nav a:hover a, header .site-nav a:hover a:link {
-  text-decoration: none;
-  padding: 7px 5px;
-  color: #363737;
-}
-
-header .site-nav a:hover a:hover {
-  color: #FFF;
+  -moz-box-shadow: 0px 0px 5px 2px #cfcfcf;
+  -webkit-box-shadow: 0px 0px 5px 2px #cfcfcf;
+  box-shadow: 0px 0px 5px 2px #cfcfcf;
 }
 
 header .email-link {
@@ -96,25 +89,4 @@ header .email-link:hover {
   -webkit-box-shadow: 5px 5px 10px 0px #cfcfcf;
   -o-box-shadow: 5px 5px 10px 0px #cfcfcf;
   box-shadow: 5px 5px 10px 0px #cfcfcf;
-}
-
-@media (max-width: 775px) {
-  .home-wrap header {
-    width: auto;
-    padding: 20px 0;
-  }
-  .home-wrap header .header-position {
-    position: relative;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    flex-direction: row;
-    align-items: center;
-  }
-  .home-wrap header .site-nav, .home-wrap header .email-link {
-    display: none;
-  }
-  .home-wrap header .logo {
-    height: 100px;
-  }
 }
