@@ -1,14 +1,27 @@
 doctype html
 html
   head 
-    title Alexis Petit
+    title Alexis Petit | Etudiant DUT Informatique
+    //meta(name='title', content='Alexis Petit | Etudiant DUT Informatique')
     meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    meta(name='description', content='Je suis étudiant en 1ère année de DUT Informatique et ceci est mon portfolio !')
+
+    
+    //link(rel="stylesheet", href="main.css")
     link(rel="stylesheet", href="style-header.css")
-    //link(rel="stylesheet", href="style-content.css")
     link(rel="stylesheet", href="style-content-temp.css")
-    link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,400italic", rel="stylesheet", type="text/css")
+    link(rel="stylesheet", href="timeline.css")
+    link(rel="stylesheet", href="skill.css")
+    link(rel="stylesheet", href="portfolio.css")
+    //link(rel="icon", type="image/png", href="img/favicon.png")
+    link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
+    link(rel="icon", href="img/favicon.ico", type="image/x-icon")
+
+    
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin-ext', rel='stylesheet', type='text/css')
     link(rel="stylesheet", href="font/fontello-contact/css/icon-contact.css")
-    link(rel="shortcut icon" type="image/x-icon" src="img/logoB.png")
+    
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 
   body
@@ -17,93 +30,163 @@ html
       header
         .header-position
           a(href="#")
-            img.logo(src="img/logoB.png")
+            img.logo(src="img/logoB.png" alt="mon logo")
           
           nav.site-nav           
             a.js-scrollTo(href="#content-header") Accueil 
             a.js-scrollTo(href="#content-aPropos") A propos
+            a.js-scrollTo(href="#skills-content") Compétences
             a.js-scrollTo(href="#content-portfolio") Portfolio
             a.js-scrollTo(href="#content-contact") Contact
-              
-          //div.social-link
-            div.logo-box
-              a(class="logo" href="#")
-                img(src="img/png2/gitHubW.png" height="45px")
-            div.logo-box
-              a(class ="logo" href="#")
-                img(src="img/png2/viadeoW.png" height="45px")
-            div.logo-box
-              a(class="logo" href="#")
-                img(src="img/png2/twitterW.png" height="45px")
 
-          a(href="mailto:alexis-petit@live.fr").email-link +email
+          //a(href="mailto:alexis-petit@live.fr").email-link +email
       
       section.content
+      
         section#content-header.content-bloc
           div.opacity
             div.opacity-txt
               div#content-header-txt
                 h1 ALEXIS PETIT
-                h2 Lorem Ipsum / Dolor Si Amet
+                h2 1ère année de DUT Informatique
         
         section#content-aPropos.content-bloc
-          h1 en developpement
-            
-            
+          //h1 A propos de moi...
+          div.flex-aPropos
+            div#maPhoto
+            hr
+            div#textePresentation
+              p Je m'appelle 
+                em Alexis Petit
+                |  et je suis un 
+                em etudiant 
+                | passioné par le développement
+                em  web
+              p#texte Je suis actuellement en première année de DUT Informatique à Lannion en Bretagne. Cette formation généraliste en informatique m'a permis de découvrir un domaine qui me passionne vraiment : le développement web. Cette formation forme également les étudiants à de nombreuses compétences utiles en entreprise : gestion de projet, algorithmie, base de données etc tout en nous permettant d'en approfondir d'autres : mathématiques, anglais...
+ 
+        section#content-parcours.content-bloc
+        .timeline
+          .circle
+          ul
+            li
+              em Septembre 2015 - aujourd'hui
+              strong DUT Informatique Lannion
+            li
+              em Juin 2015
+              strong Obtention Bac S
+            li
+              em Septembre 2014 - Juin
+              strong Terminale S Option ISN
+            li
+              em Septembre 2012 - Juin 2014
+              strong Seconde, Première S
+          .circle
+          
+        section#skills-content
+          
+          h1#skills-title Mes Compétences
+          
+          div#skills-bars
+            progress(value='90', max='100')
+            span HTML5/CSS3
+            progress(value='70', max='100')
+            span jQuery
+            progress(value='70', max='100')
+            span Java
+            progress(value='60', max='100')
+            span C
+            progress(value='80', max='100')
+            span Wordpress
+            progress(value='60', max='100')
+            span PHP/MySQL
+            progress(value='80', max='100')
+            span Photoshop/Illustrator
+          
         section#content-portfolio.content-bloc
-          h1 en developpement
+          div#grillePortfolio
+            ul.gallery
+              li
+                a(href='#')
+                  img(src='img/screenObjetsConnectes1.jpg')
+                  span.name
+                    | Internet des Objets
+                    span.title
+                      | Site interet dédié aux objets connectés réalisé en 1ère année de DUT Informatique
+              li
+                a(href='#')
+                  img(src='img/screenObjetsConnectes1.jpg')
+                  span.name
+                    | Internet des Objets
+                    span.title
+                      | Site interet dédié aux objets connectés réalisé en 1ère année de DUT Informatique
+                li
+                  a(href='#')
+                    img(src='img/screenObjetsConnectes1.jpg')
+                    span.name
+                      | Internet des Objets
+                      span.title
+                        | Site interet dédié aux objets connectés réalisé en 1ère année de DUT Informatique
+                li
+                  a(href='#')
+                    img(src='img/screenObjetsConnectes1.jpg')
+                    span.name
+                      | Internet des Objets
+                      span.title
+                        | Site interet dédié aux objets connectés réalisé en 1ère année de DUT Informatique
 
+            //div.box-portfolio
+            //  div.box-image#image-portfolio-1
+            //  div.text-desc
+            //    h3 L'Internet des Objets
+            //    p DUT Informatique - Site internet consacré aux objets connectés réalisé dans le cadre du Projet Personnel Professionnel.
+      
         section#content-contact.content-bloc
           h1#contact-title Contactez moi !
           div.flex-contact
-            div#cvDl
-              a(href="img/cvAlexis.jpg" download)
-                figure.fig
-                  img#cv(src="img/cvAlexisLowQ.jpg")
-                  figcaption curriculum vitae
                   
             div#left-contact
-              div#nomPrenom.contact-box
-                h3
-                  i.icon-user  
-                  |ALEXIS PETIT
-                  h4 Lorem Ipsum
-                
               div#localisation.contact-box
                 h3 
-                  i.icon-location
-                  |LANNION
-                h4 22300
+                  a(href="https://www.google.fr/maps/place/CROUS/@48.7572896,-3.4537664,17z/data=!3m1!4b1!4m2!3m1!1s0x48122c0346413a81:0xa1c93871daa6dfc1" target="blank")
+                    i.icon-location
+                    span LANNION
                 
-              div#email-contact.contact-box
+              div#mailContact.contact-box
                 h3
-                  i.icon-mail-alt
-                  | E-MAIL
-                a(href="mailto:alexis-petit@live.fr") alexis-petit@live.fr
-            
-            div#right-contact
+                  a(href="mailto:alexis-petit@live.fr") 
+                    i.icon-mail-alt
+                    | EMAIL
+                                  
               div#twitter.contact-box 
-                i.icon-twitter
-                |TWITTER
-                h4 @alexsPetit
+                h3
+                  a(href="https://twitter.com/alexsPetit" target="blank")
+                    i.icon-twitter
+                    | TWITTER
+                //h4 @alexsPetit
 
               div#gitHub.contact-box
                 h3
-                  i.icon-github-circled
-                  |GITHUB
-                h4  alexis-petit
+                  a(href="https://github.com/Alexis-Petit" target="blank")
+                    i.icon-github-circled
+                    |GITHUB
+                //h4  alexis-petit
                 
               div#viadeo.contact-box
                 h3
-                  i.icon-viadeo
-                  |VIADEO
-                h4 namnamnam
+                  a(href="http://www.viadeo.com/p/00213sawitauqe8j/edit?viewType=main" target="blank")
+                    i.icon-viadeo
+                    | VIADEO
+                //h4 namnamnam
+            hr
+            a#cvDl(href="img/cvAlexis.jpg" download) Mon CV
+               
               
         footer#main-footer
-          p en developpement
+          h2 alexis petit | avril 2016
           
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
       script(src="script.js")
+      script(src="skills.js")
 
       
             

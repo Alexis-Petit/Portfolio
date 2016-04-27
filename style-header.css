@@ -32,11 +32,12 @@ header .site-nav {
   margin: 20px 0;
   padding: 0;
   text-align: right;
+  margin-bottom: 50px;
 }
 
 header .site-nav a {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #363737;
   text-decoration: none;
   width: auto;
@@ -67,7 +68,7 @@ header .site-nav a:hover {
 }
 
 header .email-link {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 500;
   text-decoration: none;
   color: #363737;
@@ -79,14 +80,4 @@ header .email-link {
   margin-right: 30px;
   padding: 10px 10px;
   transition: all 200ms ease;
-}
-
-header .email-link:hover {
-  background-color: #E5E5E5;
-  font-size: 1.53em;
-  border-radius: 3px;
-  -moz-box-shadow: 5px 5px 10px 0px #cfcfcf;
-  -webkit-box-shadow: 5px 5px 10px 0px #cfcfcf;
-  -o-box-shadow: 5px 5px 10px 0px #cfcfcf;
-  box-shadow: 5px 5px 10px 0px #cfcfcf;
 }

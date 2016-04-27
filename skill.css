@@ -1,0 +1,38 @@
+#skills-bars span {
+    top: -40px;
+    left: 2%;
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 550;
+
+    color: #fff;
+}
+
+progress {
+  margin-top: 10px;
+  margin-bottom: 10px;
+    background-color: #f3f3f3;
+    border: 0;
+    height: 2em;
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0eaf0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #329ad1;
+}
+
+progress::-moz-progress-bar {
+    background-color: #329ad1;
+}
+
+#skills-bars {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
